@@ -5,7 +5,23 @@ Para esse trabalho, implementamos backups compactados pelo algoritmo LZW no cód
 
 # Métodos e Classes Criadas
 
-**Método:** Descrição
+**readISBN(String ISBN):** Método que recebe uma string ISBN e retorna um Livro ou NULL com base nessa string
+
+**open():** Método que reabre os arquivos principais (fechamos os arquivos durante os processos de backup)
+
+**BackUp(int versao, String arq):** Método do backup propriamente dito, recebe a versão do backup e a string com o nome do arquivo a ser compactado, ele lê 100 bytes do arquivo, os codifica e escreve o tamanho da mensagem codificada em uma short e depois escreve a mensagem codificada no arquivo de backup, depois ele repete o processo com os proximos 100 bytes, continuando até o fim do arquivo.
+OBS.: Se o tamanho restante do arquivo for menor que 100 Bytes, é criado um array de tamanho igual ao tamanho restante
+OBS2.: A variavel **TAMANHO_BYTES_BACKUP** armazena a quantidade de bytes pegos por vez (Está setada como 100 bytes)
+
+**AtualizaVersao():** Método que pega a última versão de backup do arquivo index.db e atualiza para a nova versão, retornando a nova versão
+
+**fazBackUp():** método fecha todos os arquivos abertos, depois executa o metodo **AtualizaVersao()** para conseguir a versão de backup mais recente e depois executa **BackUp(int versao, String arq)** para cada arquivo do banco de dados, por fim, ele reabre os arquivos fechados anteriormente 
+
+**pegaVersao():** Retorna a última versão de backup, salva no index.db
+
+**DecodificaBackUp(int versao, String arq):** Deleta o arquivo do banco de dados com o nome da varaivel **arq**, depois lê o arquivo de backup com o mesmo nome, primeiramente ele pega o tamanho da mensagem codificada, cria um array de bytes com esse tamanho e lê o arquivo até enche-lo, depois decodifica a mensagem e salva no arquivo do banco de dados padrão
+
+**decodificaBackUp(int versao):** Fecha os arquivos abertos atualmente, depois executa **pegaVersao()** para conseguir a ultima versão do backup, se a versão recebida por parametro foi menor que 1 ou maior que a  versão recebida por **pegaVersao()**, ele printa no console "VERSAO NAO ENCONTRADA". Caso o parametro recebido seja valido, ele executa **DecodificaBackUp(int versao, String arq)** para cada arquivo do banco de dados e, por fim, reabre os arquivos.
 
 
 
