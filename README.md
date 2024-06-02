@@ -1,9 +1,21 @@
-# Trabalho Prático 2 de AEDS3!
+# Trabalho Prático 3 de AEDS3!
 
-Para esse trabalho, implementamos o código da lista invertida (feito em sala) no código do TP1 
+Para esse trabalho, implementamos backups compactados pelo algoritmo LZW no código do TP2 
 
 
 # Métodos e Classes Criadas
+
+**Método:** Descrição
+
+
+
+## Perguntas
+
+**-   PERGUNTA**
+RESPOSTA
+
+
+# Métodos que estavam no TP2
 
 **Menu na Main:** Menu na main que opera pela estrutura condicional switch case no console dando as opções de: inserir novo registro, buscar uma chave, deletar um registro e atualizar um registro para o usuário.
 ATENÇÃO!!! A opção do menu não lida muito bem com acentuação, adicionamos um procedimento para execução dos comandos normalmente (sem menu)
@@ -41,33 +53,3 @@ Fazemos a união do conjunto 1 e 4 com o conjunto de Estrutura, resultando no li
 **Método getStopwords na classe ArquivoLivros:** Baixamos um dataset com inúmeras stopwords (em português) do site Kaggle (https://www.kaggle.com/datasets/heeraldedhia/stop-words-in-28-languages), a função getStopwords pega todas as Stopwords no arquivo baixado e coloca em um ArrayList
 
 **Método DEBUG:** Um método que criamos para printar todos os registros no arquivo principal e na lista invertido, só para ter certeza que está tudo nos conformes
-
-
-## Perguntas
-
-**-   A inclusão de um livro acrescenta os termos do seu título à lista invertida?**
-Sim, a inclusão de um livro cria um índice para cada termo no título na lista invertida
-
-**-   A alteração de um livro modifica a lista invertida removendo ou acrescentando termos do título?**
-Sim, nossa função de alteração remove todos os índices do título antigo e adiciona novas para o título novo (independentemente se mudou ou não)
-**-   A remoção de um livro gera a remoção dos termos do seu título na lista invertida?** 
-Sim, ao removemos um livro, todos os termo do título salvos na lista invertida são deletados também
-
-**-   Há uma busca por palavras que retorna os livros que possuam essas palavras?**
-Sim, o método read recebe uma string por parametros, pesquisa na lista invertida e retorna um arraylist de livros com os resultados
-**-   Essa busca pode ser feita com mais de uma palavra?**
-Sim, fazemos uniões consecutivas e só paramos caso acabem as palavras de pesquisa ou o conjunto esteja vazio (null)
-
-**-   As _stop words_  foram removidas de todo o processo?**
-Sim, Baixamos um dataset com inúmeras stopwords (em português) do site Kaggle (https://www.kaggle.com/datasets/heeraldedhia/stop-words-in-28-languages), para remover as stopwords, elas nunca são adicionadas à lista invertida (OBS.: Adicionamos o termo "é" que foi deixado de fora do database baixado)
-**-   Que modificação, se alguma, você fez para além dos requisitos mínimos desta tarefa?**
-Não fizemos grandes modificações para além dos requisitos da tarefa
-
-**-   O trabalho está funcionando corretamente?**
-Sim, conseguimos realizar todos nossos testes com sucesso
-
-**-   O trabalho está completo?**
-Sim, concluímos todos os requisitos pedidos pelo trabalho
-
-**-   O trabalho é original e não a cópia de um trabalho de um colega?**
-Tanto o trabalho do TP1 utilizado, quanto as adições para os requisitos do TP2 foram feitas por nós com os materiais disponibilizados após as aulas
