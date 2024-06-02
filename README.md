@@ -10,7 +10,9 @@ Para esse trabalho, implementamos backups compactados pelo algoritmo LZW no cód
 **open():** Método que reabre os arquivos principais (fechamos os arquivos durante os processos de backup)
 
 **BackUp(int versao, String arq):** Método do backup propriamente dito, recebe a versão do backup e a string com o nome do arquivo a ser compactado, ele lê 100 bytes do arquivo, os codifica e escreve o tamanho da mensagem codificada em uma short e depois escreve a mensagem codificada no arquivo de backup, depois ele repete o processo com os proximos 100 bytes, continuando até o fim do arquivo.
+
 OBS.: Se o tamanho restante do arquivo for menor que 100 Bytes, é criado um array de tamanho igual ao tamanho restante
+
 OBS2.: A variavel **TAMANHO_BYTES_BACKUP** armazena a quantidade de bytes pegos por vez (Está setada como 100 bytes)
 
 **AtualizaVersao():** Método que pega a última versão de backup do arquivo index.db e atualiza para a nova versão, retornando a nova versão
