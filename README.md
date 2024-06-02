@@ -11,8 +11,21 @@ Para esse trabalho, implementamos backups compactados pelo algoritmo LZW no cód
 
 ## Perguntas
 
-**-   PERGUNTA**
+**-   Há uma rotina de compactação usando o algoritmo LZW para fazer backup dos arquivos?**
 RESPOSTA
+**-   Há uma rotina de descompactação usando o algoritmo LZW para recuperação dos arquivos?**
+RESPOSTA
+**-   O usuário pode escolher a versão a recuperar?**
+RESPOSTA
+**-   Qual foi a taxa de compressão alcançada por esse backup? (Compare o tamanho dos arquivos compactados com os arquivos originais)**
+RESPOSTA
+**-   O trabalho está funcionando corretamente?**
+RESPOSTA
+**-   O trabalho está completo?**
+RESPOSTA
+**-   O trabalho é original e não a cópia de um trabalho de um colega?**
+RESPOSTA
+
 
 
 # Métodos que estavam no TP2
