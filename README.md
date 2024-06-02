@@ -80,7 +80,7 @@ ATENÇÃO!!! A opção do menu não lida muito bem com acentuação, adicionamos
 
 **Método de União na classe ArquivoLivros:** Esse método é responsável por realizar a união descrita no método READ, se ele receber os conjuntos (2,3,5) e (1,3,5), vai retornar (3,5) 
 
-**Método Read na classe ArquivoLivros:** Neste método, recebemos uma string por parametros e separamos elas nos espaços em branco e depois limpamos ela, isso nos retorna um array de strings, se o array de strings conter apenas uma palavra, nós simplesmente fazemos uma pesquisa pelos livros que contém essa palavra e retornamos isso. Se o array conter mais de uma palavra, fazemos a união do conjunto de livros que possui cada uma das palavras. **Exemplo:** 
+**Método Read na classe ArquivoLivros:** Neste método, recebemos uma string por parametros e separamos elas nos espaços em branco e depois limpamos ela, isso nos retorna um array de strings, se o array de strings conter apenas uma palavra, nós simplesmente fazemos uma pesquisa pelos livros que contém essa palavra e retornamos isso. Se o array conter mais de uma palavra, fazemos a interseção do conjunto de livros que possui cada uma das palavras. **Exemplo:** 
 |Palavra| Livros  |
 |--|--|
 | Dados | 1, 2, 4  |
