@@ -51,6 +51,8 @@ Sim, o usuário pode digitar a versão que ele deseja recuperar, as versões sã
 Temos um teste do backup disponibilizado na execução padrão de comandos ( Selecionada no programa atualmente, para mudar para a versão de menu, comente a chamada dos comandos e remova o // do método menu() ).
 Nesse teste conseguimos uma diferença de 71 bytes, onde os arquivos originais pesaram 871 bytes e os de backup 800 bytes (Contando com o arquivo index.db)
 
+![Imagem de Comparacao](https://github.com/DiegoMarchioni/TP3AED3/blob/main/ComparacaoBACKUPeNORMAL.png)
+
 **-   O trabalho está funcionando corretamente?**
 
 Sim, o trabalho está funcionando
