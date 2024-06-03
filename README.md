@@ -2,11 +2,10 @@
 
 Para esse trabalho, implementamos backups compactados pelo algoritmo LZW no código do TP2 
 
-**Alunos do Grupo:** Luiza Dias Corteletti
-                     Gabriel Martins Rajão
-                     Diego Marchioni Alves dos Santos
-
-
+**Alunos do Grupo:** 
+* Luiza Dias Corteletti &nbsp;
+* Gabriel Martins Rajão &nbsp;
+* Diego Marchioni Alves dos Santos
 
 
 # Métodos e Classes Criadas
@@ -50,7 +49,7 @@ Sim, o usuário pode digitar a versão que ele deseja recuperar, as versões sã
 **-   Qual foi a taxa de compressão alcançada por esse backup? (Compare o tamanho dos arquivos compactados com os arquivos originais)**
 
 Temos um teste do backup disponibilizado na execução padrão de comandos ( Selecionada no programa atualmente, para mudar para a versão de menu, comente a chamada dos comandos e remova o // do método menu() ).
-Nesse teste conseguimos uma diferença de 71 bytes, onde os arquivos originais pesaram 871 bytes e os de backup 800 bytes
+Nesse teste conseguimos uma diferença de 71 bytes, onde os arquivos originais pesaram 871 bytes e os de backup 800 bytes (Contando com o arquivo index.db)
 
 **-   O trabalho está funcionando corretamente?**
 
