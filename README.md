@@ -2,6 +2,12 @@
 
 Para esse trabalho, implementamos backups compactados pelo algoritmo LZW no código do TP2 
 
+**Alunos do Grupo:** Luiza Dias Corteletti
+                     Gabriel Martins Rajão
+                     Diego Marchioni Alves dos Santos
+
+
+
 
 # Métodos e Classes Criadas
 
@@ -31,31 +37,32 @@ OBS2.: A variavel **TAMANHO_BYTES_BACKUP** armazena a quantidade de bytes pegos 
 
 **-   Há uma rotina de compactação usando o algoritmo LZW para fazer backup dos arquivos?**
 
-RESPOSTA
+Sim, usamos o algortimo LZW feito em sala para compactar o backup dos arquivos
 
 **-   Há uma rotina de descompactação usando o algoritmo LZW para recuperação dos arquivos?**
 
-RESPOSTA
+Sim, usamos o algortimo LZW feito em sala para descompactar o backup dos arquivos
 
 **-   O usuário pode escolher a versão a recuperar?**
 
-RESPOSTA
+Sim, o usuário pode digitar a versão que ele deseja recuperar, as versões são sequenciais e a versão mais recente é salva em uma short no arquivo index.db dentro da pasta backup
 
 **-   Qual foi a taxa de compressão alcançada por esse backup? (Compare o tamanho dos arquivos compactados com os arquivos originais)**
 
-RESPOSTA
+Temos um teste do backup disponibilizado na execução padrão de comandos ( Selecionada no programa atualmente, para mudar para a versão de menu, comente a chamada dos comandos e remova o // do método menu() ).
+Nesse teste conseguimos uma diferença de 71 bytes, onde os arquivos originais pesaram 871 bytes e os de backup 800 bytes
 
 **-   O trabalho está funcionando corretamente?**
 
-RESPOSTA
+Sim, o trabalho está funcionando
 
 **-   O trabalho está completo?**
 
-RESPOSTA
+Sim, o trabalho cumpre todos os requisitos do TP3
 
 **-   O trabalho é original e não a cópia de um trabalho de um colega?**
 
-RESPOSTA
+Sim, fizemos o trabalho com base no nosso TP2 e no material disponibilizado em sala
 
 
 
